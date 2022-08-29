@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/awm2wcy.css">
+    <link rel="stylesheet" href="continuacao.css">
+    <title> registrar </title>
+</head>
+
+<body>
+    <section class="main_registrar ">
+        <aside class="left_registrar">
+            <form onsubmit="updateUserData(event)" class="card_registrar">
+                <h1>Cadastrar</h1>
+                <section class="textfield">
+                    <img src="img/icon/nome.png" alt="nome" id="icon_nome"><input type="text" id="nome" name="nome"
+                        placeholder="Digite seu nome" required>
+                </section>
+                <section class="textfield">
+                    <img src="img/icon/id.png" alt="CPF" id="icon_id"><input type="text" id="id" name="id"
+                        placeholder="Digite seu CPF" required maxlength="13">
+                </section>
+                <section class="textfield">
+                    <img src="img/icon/date.png" alt="date" id="icon_date"><input type="date" id="date" name="date"
+                        placeholder="Digite sua data de nascimento" required>
+                </section>
+                <section class="textfield">
+                    <img src="img/icon/house.png" alt="house" id="icon_house"><textarea name="house" id="house"
+                        cols="30" rows="5" placeholder="Endereço" required></textarea>
+                </section>
+                <section class="butt">
+                    <button id="butt_registrar" type="submit" onclick="Registrar()">Finalizar</button>
+                </section>
+                <p id="registros"></p>
+            </form>
+        </aside>
+    </section>
+</body>
+<script src="logica.js"></script>
+<script src="../Registrar/logica.js"></script>
+
+</html>

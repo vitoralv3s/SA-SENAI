@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/awm2wcy.css">
+    <link rel="stylesheet" href="style.css">
+    <title> Registre-se </title>
+</head>
+
+<body>
+    <section class="main_registrar ">
+        <aside class="left_registrar">
+            <form class="card_registrar" onsubmit="VerificarSenha(event)">
+                    <h1>Cadastrar</h1>
+                    <section class="textfield">
+                        <img src="img/icon/email.png" alt="email" id="icon_email"><input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </section>
+                <section class="textfield">
+                    <img src="img/icon/senha.png" alt="senha" id="icon_senha"><input type="password" id="senha" name="senha" placeholder="Digite sua senha" required minlength="6"><img id="eyepng1" width="30px" onclick="ViewPassword1()" src="img/icon/eyestranc1.png">
+                </section>
+                <section class="textfield">
+                    <img src="img/icon/senha.png" alt="senha" id="icon_senha"><input type="password" id="conf_senha" name="conf_senha" placeholder="Confirme sua senha" required minlength="6"><img id="eyepng2" width="30px" onclick="ViewPassword2()" src="img/icon/eyestranc2.png">
+                </section>
+                <section class="butt">
+                    <button id="butt_registrar" type="submit"  >Continuar</button>
+                </section>
+                <p id="confirmar"></p>
+            </form>
+        </aside>
+        <aside class="right_registrar">
+            <h1>Registre-se <br> E entre para nosso time</h1>
+            <img src="img/giflogo.gif" class="registrar_img" alt="Animação computador">
+        </aside>  
+    </section>
+</body>
+<script src="logica.js"></script>
+<script src="../Continuacao/logica.js"></script>
+</html>

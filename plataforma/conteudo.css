@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #1a1a1a;
+  font-family: ibm-plex-mono, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  white-space: wrap;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #262223;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  background: #262223;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #63FF8A;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #63FF8A;
+}
+
+
+header>div>section {
+  margin: 10px 0 0 0;
+}
+
+#provas{
+  align-content: center;
+  width: 6vw;
+  height: 4vh;
+  font-size: 22px;
+  color: white;
+  border: solid 2px #262223;
+  background-color: #63FF8A;
+  cursor: pointer;
+}
+
+#provas:hover {
+  border: solid 2px #63FF8A;
+  background-color: #262223;
+  color: #63FF8A;
+  transform: scale(1.02);
+  transition: all 0.5s;
+}
+
+#miniCurso {
+  margin-top: 33px;
+  width: 230px;
+  color: white;
+  font-size: xx-large;
+  border-right: 2px solid #63FF8A;
+  height: 43px;
+}
+
+#devWeb {
+  margin-top: 41px;
+  padding-left: 10px;
+  width: 50%;
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  height: 20px;
+}
+
+
+
+#iconTerminal {
+  margin-top: 20px;
+  margin-left: 2.5%;
+  margin-right: 5px;
+  width: 60px;
+  height: 60px;
+}
+
+#iconPerfil {
+  width: 45px;
+}
+
+#section {
+  margin-left: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+#button {
+  margin-right: 7%;
+}
+
+button {
+  margin-right: 7%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+}
+
+article {
+  margin: 0 0 2% 2%;
+  width: 96%;
+  height: auto;
+  background-color: #262223;
+  border-radius: 25px;
+  box-shadow: 0 0 1rem #1a1a1a;
+}
+
+a {
+  color: white;
+  font-size: x-large;
+  text-decoration: none;
+  margin-top: 20px;
+  background-color: transparent;
+}
+
+.space {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #63FF8A
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+}
+
+
+section {
+  margin: 0 5% 5% 5%;
+  width: 90%;
+  height: 600px;
+}
+
+section>div {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 23px;
+}
+
+section>section {
+  margin: 0;
+  width: 100%;
+  height: 48.5%;
+  background-color: #262223;
+}
+
+#line {
+  margin-bottom: 4%;
+  background-color: #63FF8A;
+  width: 96%;
+  height: 1px;
+  border: 0.5px solid #63FF8A;
+  margin-left: 2%;
+}
+
+
+section>div>section,
+figcaption {
+
+  width: 49.5%;
+  height: 100%;
+  margin: 0;
+  
+}
+
+section>div>section {
+  border-radius: 25px;
+  background-color: #63FF8A;
+}
+
+figcaption {
+  
+  color: white;
+  font-size: 22px;
+}
+
+#sectionTexto {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 23px;
+  font-weight: 700;
+
+}
+
+#nameSection {
+  margin: 0 5% 1% 5%;
+  width: 90%;
+  height: 40px;
+  border-bottom: 1px solid #63FF8A;
+  border-top: 1px solid #63FF8A;
+  color: white;
+  padding-top: 10px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+#nameArticle {
+  margin: 0 5% 0 5%;
+  width: 90%;
+  height: 49px;
+  background-color: transparent;
+  color: white;
+  padding-top: 13.5PX;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+  * {
+    padding: 0;
+    border: none;
+    margin: 0;
+  }
+
+  #iconPerfil {
+    width: 30px;
+  }
+
+  header {
+    height: 70px;
+  }
+
+  button {
+    margin-top: 20px;
+    margin-right: 2%;
+  }
+
+  #iconTerminal {
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+  }
+
+  #miniCurso {
+    width: 140px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  #devWeb {
+    margin-top: 37px;
+    font-size: 15px;
+  }
+
+  nav>a {
+    font-size: 20px;
+  }
+
+  code {
+    font-size: 10px;
+  }
+
+  #sectionTexto {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  * {
+    padding: 0;
+    border: none;
+    margin: 0;
+  }
+
+  header {
+    display: block;
+    height: 70px;
+  }
+
+  #iconTerminal {
+    display: none;
+  }
+
+  article {
+    margin: 0;
+    width: 100%;
+  }
+
+  #miniCurso {
+    width: 170px;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  #devWeb {
+    font-size: 17px;
+    margin-top: 24px;
+    width: 200px;
+  }
+
+  button {
+    display: none;
+  }
+
+  section {
+    height: 900px;
+  }
+
+  section>div>section,
+  figcaption {
+    width: 100%;
+  }
+
+  figcaption {
+    height: 250px;
+  }
+
+  section>div>section {
+    height: 250px;
+    margin-bottom: 5px;
+  }
+
+  section>div {
+    height: auto;
+    display: block;
+  }
+
+  #sectionTexto {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  #section {
+    margin-left: 10px;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  #miniCurso {
+    display: none;
+    width: 125px;
+    font-size: 19px;
+  }
+
+  #devWeb {
+    font-size: 15px;
+  }
+
+  #sectionTexto {
+    font-size: 15px;
+  }
+
+  nav>a {
+    font-size: 18px;
+  }
+
+  /* #nameArticle{
+        font-size: 23px;
+    } */
+  #nameSection {
+    font-size: 18px;
+    height: 30px;
+  }
+
+  section>div>section,
+  figcaption {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  #sectionTexto {
+    font-size: 14px;
+  }
+
+  #nameSection {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #nameArticle {
+    font-size: x-large;
+  }
+}

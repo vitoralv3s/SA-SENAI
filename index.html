@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/awm2wcy.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Principal</title>
+
+</head>
+
+<body>
+    <header>
+        <section class="start-home-header">
+            <img id="Logo" src="img/logo.jpg">
+            <h1>IANES TECH</h1>
+        </section>
+
+        <hr id="hr-topo">
+
+        <nav id="nav">
+            <button id="btn-mobile">MENU</button>
+            <ul id="menu">
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#tecnologias">TECNOLOGIAS</a></li>
+                <li><a href="#depoimentos">DEPOIMENTOS</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+       
+        
+        <nav class="button-home-header">
+            <button class="button-login-register" onclick="Entrar()">LOGIN</button>
+            <button class="button-login-register" onclick="Registrar()">REGISTER</button>
+        </nav>
+
+       
+    </header>
+
+    <main>
+        <article>
+            <a name="sobre"></a>
+            <div id="topo-inicio">
+                <section class="conteudo-inicial">OLÁ DEV !<br> De seus primeiros passos para projetos como programador profissional</section>
+                <section class="conteudo-inicial"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ejkb_YpuHWs?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" title="Começa aqui o novo @Curso em Vídeo de HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
+            </div>
+
+            <div>
+                <section id="conteudo-meio">
+                    <nav id="carrosel-nav">
+                        <marquee behavior="" direction="left" SCROLLAMOUNT=60>SEU PRIMEIRO HELLO WORLD COM A GENTE <3</marquee>
+                    </nav>
+                </section>
+
+                <section id="carrosel-conteudo">!!! CURSO DESENVOLVIMENTO WEB BASICO GRATUITO !!!</section>
+            </div>
+            
+            <div id="img-container">
+                <section id="img-centro">
+                    <section id="imagem-container"></section>
+                    <section id="texto-container">FOCO NO INICIANTE <br> DIDÁTICA DIFERENCIADA E SUPORTE PERSONALIZADO PARA QUEM NUNCA ESCREVEU UMA LINHA DE CÓDIGO</section>
+                </section>
+            </div>
+            
+            <div id="principal-center">
+                <section id="titulo-center">
+                    <a name="tecnologias"></a>
+                    <h1 align="center"> DOMINE AS PRINCIPAIS TECNOLOGIAS DO MERCADO !</h1>
+                </section>
+                <section id="texto-center">
+                    <p>INSCREVA-SE NO CURSO QUE ESTÁ MUDANDO A VIDA DOS SEUS ALUNOS</p>
+                </section>
+            </div>
+
+            <div id="tecnologias">
+                <section id="html">
+                <div class="img-tecnologias">
+                    <img src="img/html.png" >
+                    <p>Aprenda a organizar o conteúdo do seu sistema web com o HTML. Você aprenderá a criar Sections, Formulários, tocar Vídeos e mais.</p>
+                </div>
+                </section>
+
+                <section id="css">           
+                <div class="img-tecnologias">
+                     <img src="img/css.png">
+                     <p>Aprenda a dar estilo e design ao seu projeto com o mais atual do CSS. Você aprenderá Flexbox, Grid, animações e muito mais.</p>
+                </div>
+                </section>
+
+                <section id="js">
+                <div class="img-tecnologias">
+                <img src="img/javascript.png">
+                <p>Crie sistemas profissionais e repletos de interatividade com o JavaScript. Você vai dominar orientação a objetos, filter, map, reducer, promises e mais.</p>
+                </div>
+                </section>
+            </div>
+
+            <button id="inscreva-se"  onclick="Registrar()">INSCREVA-SE</button>
+            <a name="depoimentos"></a>
+            <div id="caixa-depoimentos">
+
+                <div class="depoimentos">
+
+                    <section class="foto-depoimentos">
+                        <img class="pessoa-depoimento" src="./img/alex.jfif">
+                    </section>
+                    <section id="texto-depoimentos">
+                        <p>"Eu consegui uma vaga de front end. Fiz um teste prático e passei. Obrigada, teus vídeos do Youtube e do curso de desenvolvimento me salvaram."</p><br>
+                        <h2>ALEXANDRE ETC</h2>
+                    </section>
+
+                </div>
+                
+                <div class="depoimentos">
+
+                    <section class="foto-depoimentos">
+                        <img class="pessoa-depoimento" src="img/arthur.jfif">
+                    </section>
+                    <section id="texto-depoimentos">
+                        <p>"Tive a minha primeira oportunidade de emprego na área, eu não tenho formação acadêmica mas o que eu aprendi aqui eu usei para mostrar ao empregador que eu estaria capacitado"</p><br>
+                        <h2>ARTHUR BRANCO</h2>
+                    </section>
+
+                </div>
+
+                <div class="depoimentos">
+
+                    <section class="foto-depoimentos">
+                        <img class="pessoa-depoimento" src="img/biel.jfif">
+                    </section>
+                    <section id="texto-depoimentos">
+                        <p>"Custo e suporte excelente, falo diretamente com o igor nas redes sociais. Devido ao excelente suporte, o curso também me rendeu um estágio."</p>
+                        <h2>BIEL BLINDER</h2>
+                    </section>
+
+                </div>
+
+                <div class="depoimentos">
+
+                    <section class="foto-depoimentos">
+                        <img class="pessoa-depoimento" src="img/lay.jfif">
+                    </section>
+                    <section id="texto-depoimentos">
+                        <p>"Já tenho meu primeiro cliente e já apresentei um protótipo a ele, o mesmo ficou satisfeito com o esboço promissor da aplicação que eu apresentei."</p>
+                        <h2>LAYENE NEGOCIO</h2>
+                    </section>
+
+                </div>
+            </div>
+            <button id="inscreva-se2" onclick="Registrar()">INSCREVA-SE</button>
+            
+        </article>
+    </main>
+    <a name="contato"></a>
+    <footer>
+        <div id="img-footer">
+            <img id="footer-logo" src="img/cubo.png">
+            <hr id="hr-footer">
+            <p> IANES TECH CONTATO</p>
+            <div id="copy">
+               
+                <p align="center">; Copyright (c) 2022 Company IANES TECH
+                all Rights Reserved
+                </p>
+            </div>
+        </div>
+
+        <div id="texto-footer"><
+            <div id="imagens-footer">
+                <div id="logo-github">
+                    <a href="https://github.com/VvitoralvesS"><img id="github" src="img/github.png"><br></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>

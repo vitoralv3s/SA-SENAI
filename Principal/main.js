@@ -1,0 +1,16 @@
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(){
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+
+function Entrar(){
+    window.location.href="../Login/login.html";
+}
+
+function Registrar(){
+    window.location.href="../Registrar/registrar.html";
+}

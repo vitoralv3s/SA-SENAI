@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br/">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/awm2wcy.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <h1 id="topo" align="center">IANES TECH</h1><br>
+<section class="container">
+    
+    <section class="dados">
+        <p>Nome Completo:</p> 
+        <input type="text"  id="nome-completo"/><br/>
+        CPF: <br/>
+        <input type="text"  id="CPF"><br/><br/>
+        <button onclick="gerarecibo()"> GERAR CERTIFICADO</button>
+    </section>
+</section>
+
+        <div class="print">
+
+            <h1> CERTIFICADO DE CONCLUSÃO <br> </h1>
+            <p>O Aluno concluiu o Mini Curso de desenvolvimento web fornecido pela empresa IANES TECH</p> <br>Nome Completo:<span id="certificado-conclusao"></span> <br><br> CPF Do Titular:  <span id="nome-certificado"></span></p>
+            <br><br><br>
+            <div class="assinatura">Assinatura</div>
+        </div>
+
+        <script>
+
+            function gerarecibo(){
+
+                document.getElementById('certificado-conclusao').innerHTML = document.getElementById('nome-completo').value;
+                document.getElementById('nome-certificado').innerHTML = document.getElementById('CPF').value;
+                window.print();
+            }
+
+        </script>
+</body>
+</html>

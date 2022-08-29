@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/awm2wcy.css">
+    <link rel="stylesheet" href="style.css">
+    <title> Login </title>
+</head>
+
+<body alink="#FFFFFF" vlink="#00ff88" link="#00ff88">
+    <section class="main_login ">
+        <aside class="left_login">
+            <h1>Faça login <br> E entre para nosso time</h1>
+            <img src="img/logo.jpg" id="login_img" alt="Animação">
+        </aside>
+        <aside class="right_login">
+            <form class="card_login" onsubmit="signIn(event)">
+                <h1>Login</h1>
+                <section class="textfield">
+                    <img src="img/icon/email.png" alt="email" id="icon_email"><input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </section>
+                <section class="textfield">
+                    <img src="img/icon/senha.png" alt="senha" id="icon_senha"><input type="password" id="senha" name="senha" placeholder="Digite sua senha" required ><img id="eyepng" width="30px" onclick="ViewPassword()" src="img/icon/eyestranc.png">
+                </section>
+                <section class="esqueci_senha">
+                    <a href="../Recuperar/recuperar.html"> Esqueci minha senha </a>
+                </section>
+                <section class="butt">
+                    <button id="butt_login" onclick="Entrar()"> Entrar </button>
+                    <button id="butt_registrar" onclick="Registrar()">Registrar</button>
+                </section>
+                <label>Ou entre com: </label>
+                <section class="login_com">
+                    <a href="https://appleid.apple.com/sign-in"><img src="img/icon/apple.png" alt="apple" id="icon_apple"></a> <a href="https://accounts.google.com/signin/v2/identifier?hl=pt-br&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="img/icon/google.png" alt="google" id="icon_google"></a>  <a href="https://github.com/login"><img src="img/icon/github.png" alt="github" id="icon_github"></a>
+                </section>
+                <p id="confirmar"></p>
+            </form>
+        </aside>
+    </section>
+</body>
+<script src="logica.js"></script>
+</html>

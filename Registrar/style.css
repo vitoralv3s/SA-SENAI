@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+/* elementos principais */
+body {
+    margin: 0;
+    background: #1a1a1a;
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    white-space: wrap;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #262223;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    background: #262223;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #63FF8A;
+}
+
+/* class */
+.main_registrar {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_registrar {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right_registrar {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+    color: #63FF8A;
+}
+
+.card_registrar {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #262223;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+
+.registrar_img{
+    border: 2px solid #63FF8A;
+    border-radius: 50%;
+    width: 20vw;
+    margin-top: 20px;
+    box-shadow: 5px 3px 10px #00ff881d;
+}
+
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: line;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 10px;
+    padding: 3px;
+    background: #1a1a1a;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#eyepng1{
+    margin: 10px;
+    width: 5%;
+    height: 5%;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+#eyepng2{
+    margin: 10px;
+    width: 5%;
+    height: 5%;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+
+/* elementos padronizados */
+.right_registrar > h1 {
+    font-size: 3vw;
+    color: #63FF8A;
+    cursor: context-menu;
+}
+
+.card_registrar > h1 {
+    color: #63FF8A;
+    font-weight: 800;
+    margin: 0;
+    cursor: context-menu;
+	font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 10px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #1a1a1a;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#icon_email {
+    width: 28px;
+    height: 28px;
+    margin: 10px;
+    margin-right: 15px;
+}
+
+#icon_senha {
+    width: 25px;
+    height: 26px;
+    margin: 10px;
+    margin-right: 15px;
+}
+
+#icon_nome{
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    margin-right: 15px;
+}
+
+.registrar_com {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 10px;
+}
+
+label {
+    margin: 15px auto 15px auto;
+    color: #63FF8A;
+}
+
+.textfield > input::placeholder {
+    color: #f0ffff94;
+}
+
+.esqueci_senha {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.butt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: line;
+    width: 100%;
+    padding: 0 35px;
+}
+
+#butt_registrar {
+    width: 100%;
+    padding: 16px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #1a1a1a;
+    background: #63FF8A;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 400;
+}
+
+#butt_registrar {
+    width: 50%;
+    padding: 16px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #1a1a1a;
+    background: #63FF8A;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 400;
+}
+
+#butt_registrar:hover,
+#butt_registrar:hover {
+    filter: brightness(90%);
+    transition: 0.3s;
+    background-color: #262223;
+    color: #63FF8A;
+    transform: scale(1.02);
+    transition: all 0.2s;
+}
+
+p{
+    color: red;
+}
+
+/* ajuda na responsividade */
+/* enquanto for na tela uma largura de 950px adicione os elementos abaixo */
+
+@media only screen and (max-width: 1200px) {
+    .card_registrar {
+        width: 80%;
+    }
+	.butt {
+        flex-direction: column;
+    }
+    #registrar_img {
+        width: 30vw;
+    }
+}
+
+/* media  apenas para celulares */
+@media only screen and (max-width: 1000px) {
+    body {
+        padding: 150px 0;
+    }
+
+    .main_registrar {
+        flex-direction: column;
+    }
+
+    .left_registrar > h1 {
+        display: none;
+    }
+
+    .left_registrar {
+        width: 100%;
+        height: auto;
+    }
+
+    .right_registrar {
+        display: none;
+    }
+
+
+    .card_registrar {
+		margin-top: 30px;
+        width: 60%;
+    }
+
+    .butt {
+        flex-direction: column;
+    }
+
+    #registrar_img {
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+        padding: 150px 0;
+    }
+
+    .main_registrar {
+        flex-direction: column;
+    }
+
+    .left_registrar > h1 {
+        display: none;
+    }
+
+    .left_registrar {
+        width: 100%;
+        height: auto;
+    }
+
+    .right_registrar {
+        display: none;
+    }
+
+    .registrar_img {
+        width: 40vw;
+    }
+
+    .card_registrar {
+		margin-top: 30px;
+        width: 75%;
+    }
+
+    .butt {
+        flex-direction: column;
+    }
+
+    #registrar_img {
+        width: 60vw;
+    }
+}
+
+
